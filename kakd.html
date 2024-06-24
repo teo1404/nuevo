@@ -7,69 +7,77 @@
     <title>Document</title>
 </head>
 <style>
-    *{padding: 0; margin: 0;
+    * {
+        padding: 0;
+        margin: 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         box-sizing: border-box;
     }
-body{
-    width: 80%;
-    margin: auto;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background: linear-gradient(to bottom, gray, black);
-    min-height: 100dvh;
-    font-size: 1.5em;
-}
-    .varLocal{
+
+    body {
+        width: 80%;
+        margin: auto;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background: linear-gradient(to bottom, gray, black);
+        min-height: 100dvh;
+        font-size: 1.5em;
+    }
+
+    .varLocal {
         background-color: rgb(31, 31, 31);
         color: white;
         padding: 20px;
     }
-    .varActual{
+
+    .varActual {
         background-color: rgb(80, 22, 22);
         color: white;
         padding: 20px;
     }
-    input[type=text]{
+
+    input[type=text] {
         font-size: 1em;
         padding: .5em;
         width: 300px;
     }
-    button{
+
+    button {
         font-size: 1em;
         padding: .5em;
     }
 
-    #dato{
+    #dato {
         color: yellow;
     }
 </style>
+
 <body>
     <div class="varActual">
         <h3>Info cargada en la vista actual</h3>
-       
-            <input type="text" placeholder="Ingresar un valor cualquiera" id="valorA">
-            <button onclick="pintarDato()">Guardar</button>
-       
+
+        <input type="text" placeholder="Ingresar un valor cualquiera" id="valorA">
+        <button onclick="pintarDato()">Guardar</button>
+
         <b>
-            <h2 id="resulA">   </h2>
+            <h2 id="resulA"> </h2>
         </b>
     </div>
     <div class="varLocal">
         <h3>Info cargada en la vista anterior capturada con localStorage</h3>
-       
-            <input type="text" placeholder="Ingresar un valor cualquiera" id="valorB">
-            <button onclick="pintarDatoLocal()">Guardar en local Storage</button>
-       
+
+        <input type="text" placeholder="Ingresar un valor cualquiera" id="valorB">
+        <button onclick="pintarDatoLocal()">Guardar en local Storage</button>
+
         <b>
             <h2 id="resulB">
             </h2>
         </b>
     </div>
 
-    <script src="data/localStorage.js}"></script>
+    <script src="data/localStorage.js"></script>
 </body>
 
 </html>
