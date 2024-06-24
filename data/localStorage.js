@@ -14,6 +14,10 @@ function pintarDatoLocal() {
   alert("El valor ingresado es: " + b);
 }
 
+function BorrarDatoLocal(){
+    localStorage.clear();
+}
+
 let resultadoB = document.getElementById("resulB");
 resultadoB.innerHTML = localStorage.getItem("titulo");
 console.log(localStorage.getItem("titulo"));
